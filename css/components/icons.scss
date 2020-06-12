@@ -1,0 +1,12 @@
+.icons {
+    display: flex;
+    max-width: 50%;
+}
+
+.icons__item {
+    margin-right: 46px;
+
+    &:last-of-type{
+        margin-right: 0;
+    } 
+}

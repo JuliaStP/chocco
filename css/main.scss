@@ -1,0 +1,39 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$blue: #61c4d9;
+$darkGreen: #365a49;;
+
+//z-index
+$z-dots-menu:100;
+
+//normalize css
+@import url('./normalize.css');
+
+//setup
+@import 'layout';
+@import url('./fonts.css');
+
+//components
+@import 'components/welcome';
+@import 'components/header';
+@import 'components/icons';
+@import 'components/icon';
+@import 'components/btn';
+@import 'components/section';
+@import 'components/headline';
+@import 'components/advantages';
+@import 'components/advantage';
+@import 'components/section-why';
+@import 'components/reviews';
+@import 'components/review';
+@import 'components/avatar-menu';
+@import 'components/section-reviews';
+@import 'components/form';
+@import 'components/section-form';
+@import 'components/radio';
+@import 'components/dots-menu';
+@import 'components/footer-container';
+@import 'components/contacts';
+@import 'components/socials';
+

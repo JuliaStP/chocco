@@ -1,0 +1,50 @@
+.welcome {
+    background: url(../../img/decor/bars.png) left 83% center/39% auto no-repeat, url(../../img/decor/branch.png) right bottom no-repeat;
+    background-color: $blue;  
+    height: 100vh;
+    min-height: 650px;
+    color: #ffffff;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: -60px;
+        left: 11.5%;
+        content: url(../../img/decor/leaf-small.png);
+    }
+
+    &:after {
+        position: absolute;
+        bottom: -56px;
+        right: 10.5%;
+        content: url(../../img/decor/berries-leaves.png);
+    }
+}
+
+.welcome__container {
+    height: 100%;
+    padding-top: 24px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcome__content {
+    max-width: 43%;
+}
+
+.welcome__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.welcome__motto {
+    font-size: 21px;
+    margin-bottom: 32px;
+    padding-right: 10%;
+    line-height: 1.2;
+}

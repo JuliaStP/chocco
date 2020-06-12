@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+  }
+  
+body{
+    font-family: 'AlegreyaSans', Helvetica, sans-serif; 
+    font-size: $baseFontSize;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    height: 100%;
+    color: #666666;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+ul {
+    padding: 0;
+    margin: 0;
+}
+  
+ul {
+    padding: 0;
+    margin:0;
+
+    li {
+    list-style: none;
+    }
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+  
+p {
+    margin: 0;
+    padding: 0;
+}
+  
+img {
+    display: block;
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+  
+address {
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+  
+footer {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;    
+    min-width: $containerWidth + 20px;
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: $containerWidth;
+    position: relative;
+}
