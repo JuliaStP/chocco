@@ -141,14 +141,18 @@ footer {
 }
 
 .welcome__img-container {
-  max-height: 523px;
-  max-width: 503px;
+  max-height: 486px;
+  max-width: 500px;
 }
 
 .welcome__img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+}
+
+.welcome__icons-section {
+  max-width: 50%;
 }
 
 .header {
@@ -189,7 +193,7 @@ footer {
 
 .icons {
   display: flex;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .icons__item {
