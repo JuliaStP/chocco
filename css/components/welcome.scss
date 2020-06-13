@@ -1,5 +1,5 @@
 .welcome {
-    background: url(/img/decor/bars.png) left 83% center/39% auto no-repeat, url(/img/decor/branch.png) right bottom no-repeat;
+    background: url(../img/decor/bars.png) left 83% center/39% auto no-repeat, url(../img/decor/branch.png) right bottom no-repeat;
     background-color: $blue;  
     height: 100vh;
     min-height: 650px;
@@ -10,14 +10,14 @@
         position: absolute;
         bottom: -60px;
         left: 11.5%;
-        content: url(/img/decor/leaf-small.png);
+        content: url(../img/decor/leaf-small.png);
     }
 
     &:after {
         position: absolute;
         bottom: -56px;
         right: 10.5%;
-        content: url(/img/decor/berries-leaves.png);
+        content: url(../img/decor/berries-leaves.png);
     }
 }
 
