@@ -86,7 +86,7 @@ footer {
 }
 
 .welcome {
-  background: url(../../img/decor/bars.png) left 83% center/39% auto no-repeat, url(../../img/decor/branch.png) right bottom no-repeat;
+  background: url(../img/decor/branch.png) right bottom/auto no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -96,14 +96,14 @@ footer {
 .welcome:before {
   position: absolute;
   bottom: -60px;
-  left: 11.5%;
-  content: url(../../img/decor/leaf-small.png);
+  left: 0;
+  content: url(../img/decor/leaf-small.png);
 }
 .welcome:after {
   position: absolute;
   bottom: -56px;
-  right: 10.5%;
-  content: url(../../img/decor/berries-leaves.png);
+  right: 0;
+  content: url(../img/decor/berries-leaves.png);
 }
 
 .welcome__container {
@@ -113,6 +113,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.welcome__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .welcome__content {
@@ -132,6 +138,17 @@ footer {
   margin-bottom: 32px;
   padding-right: 10%;
   line-height: 1.2;
+}
+
+.welcome__img-container {
+  max-height: 523px;
+  max-width: 503px;
+}
+
+.welcome__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .header {
@@ -278,7 +295,7 @@ footer {
   position: relative;
 }
 .advantages__item:before {
-  content: url(../../img/decor/dots.png);
+  content: url(../img/decor/dots.png);
   position: absolute;
   top: 30px;
   right: 0;
@@ -331,11 +348,11 @@ footer {
 
 .section-why {
   position: relative;
-  background: url(../../img/decor/leaf-why.png) left top 57% no-repeat;
+  background: url(../img/decor/leaf-why.png) left top 57% no-repeat;
 }
 .section-why:before {
   position: absolute;
-  content: url(../../img/decor/bars-raspberry.png);
+  content: url(../img/decor/bars-raspberry.png);
   left: 0;
   bottom: -125px;
 }
@@ -350,7 +367,7 @@ footer {
 }
 
 .review {
-  background: url(../../img/decor/blackberry-bush.png) top right no-repeat;
+  background: url(../img/decor/blackberry-bush.png) top right no-repeat;
   background-color: #f8faf9;
   padding: 50px 45px 34px;
   overflow: hidden;
@@ -441,17 +458,17 @@ footer {
 }
 
 .section-reviews {
-  background: url(../../img/decor/leaf-reviews.png) top 150% left no-repeat;
+  background: url(../img/decor/leaf-reviews.png) top 150% left no-repeat;
   position: relative;
 }
 .section-reviews:before {
-  content: url(../../img/decor/strawberry.png);
+  content: url(../img/decor/strawberry.png);
   position: absolute;
   top: 44px;
   right: 0;
 }
 .section-reviews:after {
-  content: url(../../img/decor/berries-reviews.png);
+  content: url(../img/decor/berries-reviews.png);
   position: absolute;
   bottom: -100px;
   left: 0;
@@ -515,17 +532,17 @@ footer {
 }
 
 .section-form {
-  background: url(../../img/decor/form-bg.png) center center;
+  background: url(../img/decor/form-bg.png) center center;
   position: relative;
 }
 .section-form:before {
-  content: url(../../img/decor/form-blueberry.png);
+  content: url(../img/decor/form-blueberry.png);
   position: absolute;
   bottom: 60px;
   left: 0;
 }
 .section-form:after {
-  content: url(../../img/decor/form-leaf.png);
+  content: url(../img/decor/form-leaf.png);
   position: absolute;
   bottom: 60px;
   right: 0;
@@ -550,7 +567,7 @@ footer {
   border-radius: 0;
 }
 .radio--checkbox .radio__btn:before {
-  background: url(../../img/icons/check.png) center center no-repeat;
+  background: url(../img/icons/check.png) center center no-repeat;
 }
 
 .radio__input {
@@ -589,7 +606,7 @@ footer {
 .dots-menu {
   position: fixed;
   z-index: 100;
-  top: 45%;
+  top: 32%;
   right: 3%;
 }
 
@@ -653,16 +670,16 @@ footer {
   margin-right: 0;
 }
 .socials__item--vk .socials__link {
-  background: url("../../img/icons/socials.png") -280px -39px/cover;
+  background: url("../img/icons/socials.png") -280px -39px/cover;
 }
 .socials__item--fb {
-  background: url("../../img/icons/socials.png") 0px -39px/cover;
+  background: url("../img/icons/socials.png") 0px -39px/cover;
 }
 .socials__item--in {
-  background: url("../../img/icons/socials.png") -180px -39px/cover;
+  background: url("../img/icons/socials.png") -180px -39px/cover;
 }
 .socials__item--tw {
-  background: url("../../img/icons/socials.png") -540px -39px/cover;
+  background: url("../img/icons/socials.png") -540px -39px/cover;
 }
 
 .socials__link {
