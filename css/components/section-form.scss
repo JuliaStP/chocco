@@ -1,0 +1,23 @@
+.section-form {
+    background: url(../img/decor/form-bg.png) center center;
+    position: relative;
+
+    &:before {
+        content: url(../img/decor/form-blueberry.png);
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+    }
+
+    &:after {
+        content: url(../img/decor/form-leaf.png);
+        position: absolute;
+        bottom: 60px;
+        right: 0; 
+    }
+}
+
+.section-form__title {
+    color: $darkGreen;
+    margin-bottom: 37px;
+}

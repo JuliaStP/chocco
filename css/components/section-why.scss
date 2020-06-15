@@ -1,0 +1,11 @@
+.section-why {
+    position: relative;
+    background: url(../img/decor/leaf-why.png) left top 57% no-repeat;
+
+    &:before {
+        position: absolute;
+        content: url(../img/decor/bars-raspberry.png);
+        left: 0;
+        bottom: -125px;
+    }
+}

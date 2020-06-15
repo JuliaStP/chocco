@@ -1,0 +1,32 @@
+.advantages {
+    display: flex;
+    max-width: 72.5%;
+    align-self: center;
+}
+
+.advantages__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:before {
+        content: url(../img/decor/dots.png);
+        position: absolute;
+        top: 30px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &:last-of-type {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &:first-of-type {
+        padding-left: 0;
+    }
+}
+

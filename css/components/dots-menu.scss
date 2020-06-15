@@ -1,0 +1,38 @@
+.dots-menu {
+    position: fixed;
+    z-index: $z-dots-menu;
+    top: 32%;
+    right: 3%;
+}
+
+.dots-menu__item {
+    margin-bottom: 5px;
+
+    &--active, &:hover {
+        .dots-menu__link {
+            border-color: #ffffff;
+        }
+    }
+}
+
+.dots-menu__link {
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #ffffff;
+        border-radius: 50% ;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+}
