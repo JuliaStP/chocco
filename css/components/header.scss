@@ -10,19 +10,19 @@
 }
 
 .logo {
-    margin-right: 42px;
+    margin-right: 2.3rem;
 }
 
 .menu__item {
-    margin-right: 27px;
+    margin-right: 1.5rem;
 
     &:last-of-type{
-        margin-right: 42px;
+        margin-right: 2.3rem;
     }
 }
  
 .phone {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 400;
     display: flex;
@@ -30,7 +30,8 @@
 }
 
 .phone__img {
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.3rem;
+    fill: #ffffff;
 }

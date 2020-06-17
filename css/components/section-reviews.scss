@@ -5,14 +5,14 @@
     &:before {
         content: url(../img/decor/strawberry.png);
         position: absolute;
-        top: 44px;
+        top: 2.5rem;
         right: 0;
     }
 
     &:after {
         content: url(../img/decor/berries-reviews.png);
         position: absolute;
-        bottom: -100px;
+        bottom: -5.6rem;
         left: 0;
         z-index: 1;
     }

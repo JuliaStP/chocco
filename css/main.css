@@ -74,14 +74,14 @@ footer {
 .wrapper {
   overflow: hidden;
   width: 100%;
-  min-width: 960px;
+  min-width: 60.3rem;
   min-height: 100%;
   position: relative;
 }
 
 .container {
   margin: 0 auto;
-  width: 940px;
+  width: 59rem;
   position: relative;
 }
 
@@ -89,27 +89,27 @@ footer {
   background: url(../img/decor/branch.png) right bottom/auto no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.75rem;
   color: #ffffff;
   position: relative;
 }
 .welcome:before {
   position: absolute;
-  bottom: -60px;
+  bottom: -4rem;
   left: 0;
   content: url(../img/decor/leaf-small.png);
 }
 .welcome:after {
   position: absolute;
-  bottom: -56px;
+  bottom: -3.6rem;
   right: 0;
   content: url(../img/decor/berries-leaves.png);
 }
 
 .welcome__container {
   height: 100%;
-  padding-top: 24px;
-  padding-bottom: 45px;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -126,23 +126,24 @@ footer {
 }
 
 .welcome__title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 0.5rem;
 }
 
 .welcome__motto {
-  font-size: 21px;
-  margin-bottom: 32px;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
   padding-right: 10%;
   line-height: 1.2;
+  letter-spacing: 0.05rem;
 }
 
 .welcome__img-container {
-  max-height: 486px;
-  max-width: 500px;
+  max-height: 30rem;
+  max-width: 30rem;
 }
 
 .welcome__img {
@@ -153,6 +154,7 @@ footer {
 
 .welcome__icons-section {
   max-width: 50%;
+  max-height: 4rem;
 }
 
 .header {
@@ -167,18 +169,18 @@ footer {
 }
 
 .logo {
-  margin-right: 42px;
+  margin-right: 2.3rem;
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 1.5rem;
 }
 .menu__item:last-of-type {
-  margin-right: 42px;
+  margin-right: 2.3rem;
 }
 
 .phone {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 400;
   display: flex;
@@ -186,18 +188,20 @@ footer {
 }
 
 .phone__img {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.3rem;
+  fill: #ffffff;
 }
 
 .icons {
   display: flex;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .icons__item {
-  margin-right: 46px;
+  margin-right: 2.55rem;
 }
 .icons__item:last-of-type {
   margin-right: 0;
@@ -208,21 +212,27 @@ footer {
 }
 
 .icon__pic-container {
-  width: 45px;
-  margin-right: 10px;
+  width: 2.5rem;
+  margin-right: 0.55rem;
+}
+
+.icon__pic {
+  width: 100%;
+  height: 100%;
+  fill: #c6f7ff;
 }
 
 .icon__text {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: 0.95rem;
+  max-width: 4.8rem;
   line-height: 1.2;
 }
 
 .btn {
   display: inline-flex;
-  font-size: 19px;
-  border-radius: 100px;
-  padding: 19px 37px;
+  font-size: 1.25rem;
+  border-radius: 5.5rem;
+  padding: 1.01rem 2.05rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -248,9 +258,9 @@ footer {
 .btn--color--clear {
   background-color: transparent;
   color: #000000;
-  font-size: 18px;
+  font-size: 1rem;
   text-transform: none;
-  padding: 0 22px;
+  padding: 0 1.03rem;
 }
 .btn--color--clear:hover {
   background-color: transparent;
@@ -258,7 +268,7 @@ footer {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,9 +276,9 @@ footer {
 
 .section__title {
   color: #000000;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -278,12 +288,12 @@ footer {
 }
 
 .headline__title {
-  margin-bottom: 6px;
+  margin-bottom: 0.4rem;
 }
 
 .headline__motto {
   padding: 0 28%;
-  margin-bottom: 55px;
+  margin-bottom: 3.5rem;
   line-height: 1.1;
 }
 
@@ -301,7 +311,7 @@ footer {
 .advantages__item:before {
   content: url(../img/decor/dots.png);
   position: absolute;
-  top: 30px;
+  top: 3.5rem;
   right: 0;
   transform: translateX(50%);
 }
@@ -321,26 +331,27 @@ footer {
 
 .advantage__pic {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 8rem;
+  height: 8rem;
   position: relative;
   border-radius: 50%;
   overflow: hidden;
   background-color: #f2f5f4;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .advantage__img {
-  width: 75px;
-  height: 69px;
+  width: 4.8rem;
+  height: 4.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: #2e2e2d;
 }
 
 .advantage__title {
-  font-size: 27px;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #000000;
   margin-bottom: 16px;
@@ -358,11 +369,11 @@ footer {
   position: absolute;
   content: url(../img/decor/bars-raspberry.png);
   left: 0;
-  bottom: -125px;
+  bottom: -8.5rem;
 }
 
 .reviews__content {
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .reviews__all {
@@ -373,7 +384,7 @@ footer {
 .review {
   background: url(../img/decor/blackberry-bush.png) top right no-repeat;
   background-color: #f8faf9;
-  padding: 50px 45px 34px;
+  padding: 2.8rem 2.7rem 1.9rem;
   overflow: hidden;
   position: relative;
 }
@@ -381,8 +392,8 @@ footer {
   position: absolute;
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background-color: #ffffff;
   left: 50%;
@@ -395,8 +406,8 @@ footer {
 }
 
 .review__avatar {
-  width: 254px;
-  height: 260px;
+  width: 14.5rem;
+  height: 14.8rem;
 }
 
 .review__pic {
@@ -406,52 +417,54 @@ footer {
 }
 
 .review__content {
-  margin-left: 20px;
+  margin-left: 1.2rem;
   flex: 1;
   max-width: 51%;
-  padding-top: 8px;
+  padding-top: 0.45rem;
 }
 
 .review__title {
   color: #000000;
-  font-size: 30px;
+  font-size: 1.7rem;
   font-weight: 700;
-  margin-bottom: 17px;
+  margin-bottom: 0.95rem;
 }
 
 .review__text {
-  margin-bottom: 26px;
+  margin-bottom: 1.5rem;
   line-height: 1.25;
 }
 
 .review__name {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
   color: #000000;
 }
 
 .avatar-menu {
-  width: 80px;
-  height: 80px;
-  border: 6px solid transparent;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  margin-right: 2px;
+  margin-right: 0.1rem;
 }
 .avatar-menu:last-of-type {
   margin-right: 0;
 }
-.avatar-menu--active, .avatar-menu:hover {
-  border-color: #0f5a47;
+.avatar-menu:focus {
+  border-color: transparent;
+  outline: transparent;
 }
 
 .avatar-menu__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 0.5rem solid transparent;
+  border-radius: 50%;
+}
+.avatar-menu__link--active, .avatar-menu__link:hover, .avatar-menu__link:focus {
+  border-color: #0f5a47;
 }
 
 .avatar-menu__pic {
@@ -468,13 +481,13 @@ footer {
 .section-reviews:before {
   content: url(../img/decor/strawberry.png);
   position: absolute;
-  top: 44px;
+  top: 2.5rem;
   right: 0;
 }
 .section-reviews:after {
   content: url(../img/decor/berries-reviews.png);
   position: absolute;
-  bottom: -100px;
+  bottom: -5.6rem;
   left: 0;
   z-index: 1;
 }
@@ -485,7 +498,7 @@ footer {
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.2rem;
 }
 .form__col:last-of-type {
   margin-right: 0;
@@ -493,12 +506,12 @@ footer {
 
 .form__row {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 0.9rem;
 }
 
 .form__cell {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.2rem;
 }
 .form__cell:last-of-type {
   margin-right: 0;
@@ -507,32 +520,32 @@ footer {
 .form__input {
   width: 100%;
   border: none;
-  height: 60px;
-  padding: 18px 11px;
-  border: 3px solid transparent;
+  height: 3.4rem;
+  padding: 1rem 1.6rem;
+  border: 0.17rem solid transparent;
 }
 .form__input:focus {
   outline: none;
   border-color: #dee2bd;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 
 .form__title {
-  font-size: 18px;
+  font-size: 1rem;
   color: #365a49;
 }
 
 .form__elements {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 8px;
+  margin-bottom: 0.45rem;
 }
 
 .form__btns {
-  margin-top: 40px;
+  margin-top: 2.2rem;
 }
 
 .section-form {
@@ -542,19 +555,19 @@ footer {
 .section-form:before {
   content: url(../img/decor/form-blueberry.png);
   position: absolute;
-  bottom: 60px;
+  bottom: 3.5rem;
   left: 0;
 }
 .section-form:after {
   content: url(../img/decor/form-leaf.png);
   position: absolute;
-  bottom: 60px;
+  bottom: 3.5rem;
   right: 0;
 }
 
 .section-form__title {
   color: #365a49;
-  margin-bottom: 37px;
+  margin-bottom: 2.1rem;
 }
 
 .radio {
@@ -571,7 +584,8 @@ footer {
   border-radius: 0;
 }
 .radio--checkbox .radio__btn:before {
-  background: url(../img/icons/check.png) center center no-repeat;
+  background: url(../img/icons/sprite.svg#checkmark) center center no-repeat;
+  fill: #365a49;
 }
 
 .radio__input {
@@ -593,8 +607,8 @@ footer {
   content: "";
   position: absolute;
   display: none;
-  width: 14px;
-  height: 14px;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 50%;
   background-color: #365a49;
   top: 50%;
@@ -603,7 +617,7 @@ footer {
 }
 
 .radio__title {
-  font-size: 18px;
+  font-size: 1rem;
   color: #365a49;
 }
 
@@ -615,16 +629,16 @@ footer {
 }
 
 .dots-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 .dots-menu__item--active .dots-menu__link, .dots-menu__item:hover .dots-menu__link {
   border-color: #ffffff;
 }
 
 .dots-menu__link {
-  width: 16px;
-  height: 16px;
-  border: 1px solid transparent;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 0.05rem solid transparent;
   border-radius: 50%;
   position: relative;
   display: block;
@@ -632,8 +646,8 @@ footer {
 .dots-menu__link:before {
   position: absolute;
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 0.3rem;
+  height: 0.3rem;
   background-color: #ffffff;
   border-radius: 50%;
   top: 50%;
@@ -642,24 +656,31 @@ footer {
   display: block;
 }
 
-.footer-container {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 93px;
+  min-height: 5.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
 }
 
 .contacts {
   text-decoration: none;
 }
+.contacts .phone__img {
+  fill: #365a49;
+}
 
 .contacts__add {
-  font-size: 21px;
+  font-size: 1.2rem;
   color: #000000;
 }
 
 .contacts__phone {
-  font-size: 21px;
+  font-size: 1.2rem;
   color: #365a49;
 }
 
@@ -668,26 +689,26 @@ footer {
 }
 
 .socials__item {
-  margin-right: 20px;
+  margin-right: 1.2rem;
 }
 .socials__item:last-of-type {
   margin-right: 0;
 }
-.socials__item--vk .socials__link {
-  background: url("../img/icons/socials.png") -280px -39px/cover;
+.socials__item .socials__link .socials__img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
 }
-.socials__item--fb {
-  background: url("../img/icons/socials.png") 0px -39px/cover;
-}
-.socials__item--in {
-  background: url("../img/icons/socials.png") -180px -39px/cover;
-}
-.socials__item--tw {
-  background: url("../img/icons/socials.png") -540px -39px/cover;
+.socials__item:hover .socials__link .socials__img {
+  opacity: 1;
 }
 
 .socials__link {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.locations-container {
+  position: relative;
 }

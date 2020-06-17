@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/main.css">
     <title>Chocco Bars</title>
 </head>
@@ -44,7 +44,9 @@
 
                         <a href="tel:88009039090" class="phone">
                             <span class="phone__icon">
-                                <img src="./img/icons/phone-white.png" alt="телефон" class="phone__img">
+                                <svg class="phone__img">
+                                    <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                                </svg>
                             </span>
                             8 800 903 90 90</a>
 
@@ -64,19 +66,25 @@
                         <ul class="welcome__icons icons">
                             <li class="icons__item icon">
                                 <div class="icon__pic-container">
-                                    <img src="./img/icons/5.svg" alt="листок" class="icon__pic">
+                                    <svg class="icon__pic">
+                                        <use xlink:href="./img/icons/sprite.svg#leaf"></use>
+                                    </svg>
                                 </div>
                                 <div class="icon__text">100% натуральный продукт</div>
                             </li>
                             <li class="icons__item icon">
                                 <div class="icon__pic-container">
-                                    <img src="./img/icons/6.svg" alt="грузовик" class="icon__pic">
+                                    <svg class="icon__pic">
+                                        <use xlink:href="./img/icons/sprite.svg#truck"></use>
+                                    </svg>
                                 </div>
                                 <div class="icon__text">3-5 дней доставка по РФ</div>
                             </li>
                             <li class="icons__item icon">
                                 <div class="icon__pic-container">
-                                    <img src="./img/icons/4.svg" alt="метр" class="icon__pic">
+                                    <svg class="icon__pic">
+                                        <use xlink:href="./img/icons/sprite.svg#meter"></use>
+                                    </svg>
                                 </div>
                                 <div class="icon__text">Не портит фигуру</div>
                             </li>
@@ -97,7 +105,9 @@
                     <li class="advantages__item advantage">
                         <div class="advantage__pic">
                             <div class="advantage__img-container">
-                                <img src="./img/icons/1.svg" alt="человек" class="advantage__img">
+                                <svg class="advantage__img">
+                                    <use xlink:href="./img/icons/sprite.svg#person"></use>
+                                </svg>
                             </div>
                         </div>
                         <div class="advantage__content">
@@ -112,7 +122,9 @@
                     <li class="advantages__item advantage">
                         <div class="advantage__pic">
                             <div class="advantage__img-container">
-                                <img src="./img/icons/3.svg" alt="смайл" class="advantage__img">
+                                <svg class="advantage__img">
+                                    <use xlink:href="./img/icons/sprite.svg#smile"></use>
+                                </svg>
                             </div>
                         </div>
                         <div class="advantage__content">
@@ -127,7 +139,9 @@
                     <li class="advantages__item advantage">
                         <div class="advantage__pic">
                             <div class="advantage__img-container">
-                                <img src="./img/icons/2.svg" alt="рука" class="advantage__img">
+                                <svg class="advantage__img">
+                                    <use xlink:href="./img/icons/sprite.svg#arm"></use>
+                                </svg>
                             </div>
                         </div>
                         <div class="advantage__content">
@@ -166,7 +180,7 @@
                             </div>
                         </div>
                         <ul class="reviews__all">
-                            <li class="reviews__item avatar-menu avatar-menu--active">
+                            <li class="reviews__item avatar-menu">
                                 <a href="#" class="avatar-menu__link">
                                     <img src="./img/reviews/photo1.jpg" alt="аватар" class="avatar-menu__pic">
                                 </a>
@@ -262,34 +276,61 @@
                 </div>
             </section>
 
-            <footer class="footer">
-                <div class="container footer-container">
-                    <address class="contacts">
-                        <div class="contacts__add">Москва, ул.Новый Арбат, д.31/12</div>
-                        <a href="tel:88009039090" class="contacts__phone phone">
-                            <span class="phone__icon">
-                                <img src="./img/icons/phone.svg" alt="телефон" class="phone__img">
-                            </span>
-                            8 800 903 90 90</a>
-                    </address>
-                    <div class="socials">
-                        <ul class="socials__list">
-                            <li class="socials__item socials__item--vk">
-                                <a href="#" class="socials__link" aria-label="Ссылка на наш канал в вконтакте"></a>
-                            </li>
-                            <li class="socials__item socials__item--fb">
-                                <a href="#" class="socials__link" aria-label="Ссылка на наш канал в фэйсбук"></a>
-                            </li>
-                            <li class="socials__item socials__item--in">
-                                <a href="#" class="socials__link" aria-label="Ссылка на наш канал в инстаграм"></a>
-                            </li>
-                            <li class="socials__item socials__item--tw">
-                                <a href="#" class="socials__link" aria-label="Ссылка на наш канал в твиттере"></a>
-                            </li>
-                        </ul>
+
+            <section class="locations">
+                <div class="container locations-container">
+                    <div class="locations__map">
+                        <img src="./img/decor/map.png" alt="карта" class="locations__map-img">
                     </div>
+                    <footer class="footer">
+                        
+                            <address class="contacts">
+                                <div class="contacts__add">Москва, ул.Новый Арбат, д.31/12</div>
+                                <a href="tel:88009039090" class="contacts__phone phone">
+                                    <span class="phone__icon">
+                                        <svg class="phone__img">
+                                            <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                                        </svg>
+                                    </span>
+                                    8 800 903 90 90</a>
+                            </address>
+                            <div class="socials">
+                                <ul class="socials__list">
+                                    <li class="socials__item socials__item--vk">
+                                        <a href="#" class="socials__link"
+                                            aria-label="Ссылка на наш канал в вконтакте">
+                                            <svg class="socials__img">
+                                                <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item socials__item--fb">
+                                        <a href="#" class="socials__link"
+                                            aria-label="Ссылка на наш канал в фэйсбук">
+                                            <svg class="socials__img">
+                                                <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                                            </svg></a>
+                                    </li>
+                                    <li class="socials__item socials__item--in">
+                                        <a href="#" class="socials__link"
+                                            aria-label="Ссылка на наш канал в инстаграм">
+                                            <svg class="socials__img">
+                                                <use xlink:href="./img/icons/sprite.svg#in"></use>
+                                            </svg></a>
+                                    </li>
+                                    <li class="socials__item socials__item--tw">
+                                        <a href="#" class="socials__link"
+                                            aria-label="Ссылка на наш канал в твиттере">
+                                            <svg class="socials__img">
+                                                <use xlink:href="./img/icons/sprite.svg#tw"></use>
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                    </footer>
                 </div>
-            </footer>
+            </section>
         </div>
     </div>
 

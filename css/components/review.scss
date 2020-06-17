@@ -1,7 +1,7 @@
 .review {
     background: url(../img/decor/blackberry-bush.png) top right no-repeat;
     background-color: #f8faf9;
-    padding: 50px 45px 34px;
+    padding: 2.8rem 2.7rem 1.9rem;
     overflow: hidden;
     position: relative;
 
@@ -9,8 +9,8 @@
         position: absolute;
         content: '';
         display: block;
-        width: 90px;
-        height: 90px;
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         background-color: #ffffff;
         left: 50%;
@@ -24,8 +24,8 @@
 }
 
 .review__avatar {
-    width: 254px;
-    height: 260px;
+    width: 14.5rem;
+    height: 14.8rem;
 }
 
 .review__pic {
@@ -35,26 +35,26 @@
 }
 
 .review__content {
-    margin-left: 20px;
+    margin-left: 1.2rem;
     flex: 1;
     max-width: 51%;
-    padding-top: 8px;
+    padding-top: 0.45rem;
 }
 
 .review__title {
     color: #000000;
-    font-size: 30px;
+    font-size: 1.7rem;
     font-weight: 700;
-    margin-bottom: 17px;
+    margin-bottom: 0.95rem;
 }
 
 .review__text {
-    margin-bottom: 26px;
+    margin-bottom: 1.5rem;
     line-height: 1.25;
 }
 
 .review__name {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     color: #000000;
 }

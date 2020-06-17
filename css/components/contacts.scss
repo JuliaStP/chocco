@@ -1,13 +1,17 @@
 .contacts {
     text-decoration: none;
+
+    .phone__img {
+        fill: $darkGreen;
+    }
 }
 
 .contacts__add {
-    font-size: 21px;
+    font-size: 1.2rem;
     color: #000000;
 }
 
 .contacts__phone {
-    font-size: 21px;
+    font-size: 1.2rem;
     color: $darkGreen;
 }

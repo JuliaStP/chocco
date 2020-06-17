@@ -13,7 +13,8 @@
             border-radius: 0;
 
             &:before {
-                background: url(../img/icons/check.png) center center no-repeat;
+                background: url(../img/icons/sprite.svg#checkmark) center center no-repeat;
+                fill: $darkGreen;
             }
         }
     }
@@ -41,8 +42,8 @@
         content: '';
         position: absolute;
         display: none;
-        width: 14px;
-        height: 14px;
+        width: 1.3rem;
+        height: 1.3rem;
         border-radius: 50%;
         background-color: $darkGreen;
         top: 50%;
@@ -52,6 +53,6 @@
 }
 
 .radio__title {
-    font-size: 18px;
+    font-size: 1rem;
     color: $darkGreen;
 }

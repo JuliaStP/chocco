@@ -1,4 +1,4 @@
-$containerWidth: 940px;
+$containerWidth: 59rem;
 $baseFontSize: 18px;
 
 $blue: #61c4d9;
@@ -33,7 +33,8 @@ $z-dots-menu:100;
 @import 'components/section-form';
 @import 'components/radio';
 @import 'components/dots-menu';
-@import 'components/footer-container';
+@import 'components/footer';
 @import 'components/contacts';
 @import 'components/socials';
-
+@import 'components/locations';
+@import 'components/locations-container';

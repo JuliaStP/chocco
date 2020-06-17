@@ -4,7 +4,7 @@
 
 .form__col {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 1.2rem;
 
     &:last-of-type{
         margin-right: 0;
@@ -13,12 +13,12 @@
 
 .form__row {
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 0.9rem;
 }
 
 .form__cell {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 1.2rem;
 
     &:last-of-type {
         margin-right: 0;
@@ -28,9 +28,9 @@
 .form__input {
     width: 100%;
     border: none;
-    height: 60px;
-    padding: 18px 11px;
-    border: 3px solid transparent;
+    height: 3.4rem;
+    padding: 1rem 1.6rem;
+    border: 0.17rem solid transparent;
 
     &:focus {
         outline: none;
@@ -38,22 +38,22 @@
     }
 
     &--textarea{
-        height: 180px;
+        height: 10rem;
         resize: none;
     }
 }
 
 .form__title {
-    font-size: 18px;
+    font-size: 1rem;
     color: $darkGreen;
 }
 
 .form__elements {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 8px;
+    margin-bottom: 0.45rem;
 }
 
 .form__btns {
-    margin-top: 40px;
+    margin-top: 2.2rem;
 }

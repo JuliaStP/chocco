@@ -4,26 +4,27 @@
 
 .advantage__pic {
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: 8rem;
+    height: 8rem;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
     background-color: #f2f5f4;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 
 .advantage__img {
-    width: 75px;
-    height: 69px;
+    width: 4.8rem;
+    height: 4.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: #2e2e2d;
 }
 
 .advantage__title {
-    font-size: 27px;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #000000;
     margin-bottom: 16px;
