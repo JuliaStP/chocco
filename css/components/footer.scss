@@ -7,4 +7,10 @@
     left: 0;
     bottom: 0;
     background-color: #ffffff;
+
+    @include phones {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 35px;
+    }
 }

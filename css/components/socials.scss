@@ -3,7 +3,7 @@
 }
 
 .socials__item {
-    margin-right: 1.2rem;
+    margin-right: rem(20px);
     
     &:last-of-type {
         margin-right: 0;
@@ -22,6 +22,6 @@
 
 .socials__link {
     display: block;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: rem(20px);
+    height: rem(20px);
 }

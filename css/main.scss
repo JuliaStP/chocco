@@ -1,11 +1,18 @@
-$containerWidth: 59rem;
+$containerWidth: 940px;
 $baseFontSize: 18px;
 
-$blue: #61c4d9;
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$blue: #86c3d7;
 $darkGreen: #365a49;;
 
 //z-index
 $z-dots-menu:100;
+
+@import 'components/media';
 
 //normalize css
 @import url('./normalize.css');
@@ -38,3 +45,4 @@ $z-dots-menu:100;
 @import 'components/socials';
 @import 'components/locations';
 @import 'components/locations-container';
+@import 'components/burger';

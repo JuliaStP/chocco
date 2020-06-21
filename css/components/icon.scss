@@ -3,18 +3,18 @@
 }
 
 .icon__pic-container {
-    width: 2.5rem;
-    margin-right: 0.55rem;
+    width: rem(45px);
+    margin-right: rem(10px);
 }
 
 .icon__pic {
-    width: 100%;
+    width: 130%;
     height: 100%;
     fill: #c6f7ff;
 }
 
 .icon__text {
-    font-size: 0.95rem;
-    max-width: 4.8rem;
+    font-size: rem(16px);
+    max-width: rem(85px);
     line-height: 1.2;
 }

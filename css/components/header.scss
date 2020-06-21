@@ -7,31 +7,48 @@
 .menu__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
-    margin-right: 2.3rem;
+    margin-right: rem(42px);
+}
+
+.header__menu {
+    // margin: 0 30px;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__item {
-    margin-right: 1.5rem;
+    margin-right: rem(27px);
 
     &:last-of-type{
-        margin-right: 2.3rem;
+        margin-right: rem(42px);
     }
 }
  
+
 .phone {
-    font-size: 1.5rem;
+    font-size: rem(24px);
     text-transform: uppercase;
     font-weight: 400;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+}
+
+.header__phone {
+    @include tablets {
+        display: none;
+    }
 }
 
 .phone__img {
-    width: 0.7rem;
-    height: 0.7rem;
-    margin-right: 0.3rem;
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
     fill: #ffffff;
 }

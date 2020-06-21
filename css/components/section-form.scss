@@ -7,6 +7,14 @@
         position: absolute;
         bottom: 3.5rem;
         left: 0;
+
+        @include tablets{
+            display: none;
+        }
+
+        @include phones{
+            display: none;
+        }
     }
 
     &:after {
@@ -14,10 +22,26 @@
         position: absolute;
         bottom: 3.5rem;
         right: 0; 
+
+        @include tablets{
+            display: none;
+        }
+
+        @include phones {
+            display: none;
+        }
     }
 }
 
 .section-form__title {
     color: $darkGreen;
-    margin-bottom: 2.1rem;
+    margin-bottom: rem(37px);
+
+    @include tablets {
+        margin-bottom: rem(24px);   
+    }
+
+    @include phones {
+        margin-bottom: rem(20px);
+    }
 }
