@@ -24,4 +24,8 @@
         padding: 0;
         margin-bottom: rem(65px);
     }
+
+    @include small-phones {
+        margin-bottom: rem(30px);
+    }
 }

@@ -6,7 +6,7 @@
     justify-content: center;
 
     @include tablets {
-        min-height: rem(1000px);
+        min-height: initial;
     }
 }
 
@@ -17,4 +17,8 @@
     margin-bottom: rem(25px);
     text-align: center;
     text-transform: uppercase;
+
+    @include small-phones {
+        font-size: rem(28px);
+    }
 }

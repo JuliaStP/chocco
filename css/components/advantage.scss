@@ -7,6 +7,10 @@
         align-items: center;
         margin-bottom: rem(45px);
     }
+
+    @include small-phones {
+        margin-bottom: rem(20px);
+    }
 }
 
 .advantage__pic {
@@ -27,6 +31,11 @@
         height: 125px;
     }
     
+
+    @include small-phones {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .advantage__img {

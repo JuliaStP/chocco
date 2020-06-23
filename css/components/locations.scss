@@ -1,3 +1,7 @@
+.locations {
+    position: relative;
+}
+
 .locations__map {
     min-height: 100%;
     position: relative;
@@ -6,6 +10,7 @@
 .locations__map-img {
     position: absolute;
     height: 100%;
+    width: 100%;
     top:0;
     left: 0;
     object-fit: cover;

@@ -15,6 +15,10 @@
         @include phones {
             top:rem(74px);
         }
+
+        @include small-phones {
+            display: none;
+        }
     }
 
     &:after {
@@ -23,5 +27,9 @@
         bottom: rem(-63px);
         left: 0;
         z-index: 1;
+
+        @include small-phones {
+            display: none;
+        }
     }
 }

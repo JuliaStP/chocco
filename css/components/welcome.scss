@@ -13,7 +13,6 @@
     }
 
     @include tablets {
-        height: rem(1000px);
         background-position: right bottom 89%;
     }
 
@@ -67,6 +66,25 @@
             content: url(../img/decor/tablet-bars.png);
         }
     }
+
+    @include small-phones {
+        position:relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &:before {
+        position: absolute;
+        content: url(../img/decor/tablet-bars.png);
+        transform: scale(0.7);
+        top: 0px;
+        right: rem(102px);
+        left: 0;
+        bottom: rem(227px);
+        }
+    }
 }
 
 .welcome__title {
@@ -85,6 +103,10 @@
     @include phones {
         line-height: 0.8;
     }
+
+    @include small-phones {
+        font-size: rem(28px);
+    }
 }
 
 .welcome__motto {
@@ -95,12 +117,15 @@
 
     @include tablets {
         padding: 0 25%;
-        margin-bottom: rem(29px);
-        
+        margin-bottom: rem(29px);  
     }
 
     @include phones {
         padding: 0 15%
+    }
+
+    @include small-phones {
+        padding: 0 17%
     }
 }
 

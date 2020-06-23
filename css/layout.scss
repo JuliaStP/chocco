@@ -9,6 +9,10 @@ html {
     @include phones {
         font-size: $baseFontSize - 2px;
     }
+
+    @include small-phones {
+        font-size: $baseFontSize - 4px;
+    }
   }
   
 body{

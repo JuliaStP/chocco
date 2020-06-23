@@ -14,6 +14,11 @@ html {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 body {
   font-family: "AlegreyaSans", Helvetica, sans-serif;
@@ -111,7 +116,6 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .welcome {
-    height: 55.5555555556rem;
     background-position: right bottom 89%;
   }
 }
@@ -166,6 +170,25 @@ footer {
     content: url(../img/decor/tablet-bars.png);
   }
 }
+@media screen and (max-width: 375px) {
+  .welcome__content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .welcome__content:before {
+    position: absolute;
+    content: url(../img/decor/tablet-bars.png);
+    transform: scale(0.7);
+    top: 0px;
+    right: 5.6666666667rem;
+    left: 0;
+    bottom: 12.6111111111rem;
+  }
+}
 
 .welcome__title {
   font-size: 2.6666666667rem;
@@ -186,6 +209,11 @@ footer {
     line-height: 0.8;
   }
 }
+@media screen and (max-width: 375px) {
+  .welcome__title {
+    font-size: 1.5555555556rem;
+  }
+}
 
 .welcome__motto {
   font-size: 1.1666666667rem;
@@ -202,6 +230,11 @@ footer {
 @media screen and (max-width: 480px) {
   .welcome__motto {
     padding: 0 15%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .welcome__motto {
+    padding: 0 17%;
   }
 }
 
@@ -370,7 +403,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .section {
-    min-height: 55.5555555556rem;
+    min-height: initial;
   }
 }
 
@@ -381,6 +414,11 @@ footer {
   margin-bottom: 1.3888888889rem;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (max-width: 375px) {
+  .section__title {
+    font-size: 1.5555555556rem;
+  }
 }
 
 .headline {
@@ -411,6 +449,11 @@ footer {
   .headline__motto {
     padding: 0;
     margin-bottom: 3.6111111111rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .headline__motto {
+    margin-bottom: 1.6666666667rem;
   }
 }
 
@@ -467,6 +510,11 @@ footer {
     margin-bottom: 2.5rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .advantage {
+    margin-bottom: 1.1111111111rem;
+  }
+}
 
 .advantage__pic {
   display: inline-block;
@@ -485,6 +533,12 @@ footer {
     margin-bottom: 0;
     width: 125px;
     height: 125px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .advantage__pic {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -702,12 +756,22 @@ footer {
     top: 4.1111111111rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .section-reviews:before {
+    display: none;
+  }
+}
 .section-reviews:after {
   content: url(../img/decor/berries-reviews.png);
   position: absolute;
   bottom: -3.5rem;
   left: 0;
   z-index: 1;
+}
+@media screen and (max-width: 375px) {
+  .section-reviews:after {
+    display: none;
+  }
 }
 
 .form {
@@ -825,6 +889,10 @@ footer {
   }
 }
 
+.form__radio-link:focus {
+  outline: 3px solid #dee2bd;
+}
+
 .section-form {
   background: url(../img/decor/form-bg.png) center center;
   position: relative;
@@ -902,6 +970,7 @@ footer {
 }
 .radio--checkbox .radio__btn:before {
   content: "";
+  background: url(../img/icons/checkmark.svg) center center no-repeat;
 }
 
 .radio__input {
@@ -984,16 +1053,22 @@ footer {
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
   min-height: 5.2rem;
   position: absolute;
   left: 0;
   bottom: 0;
   background-color: #ffffff;
 }
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 @media screen and (max-width: 480px) {
-  .footer {
+  .footer__container {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 35px;
@@ -1051,6 +1126,10 @@ footer {
   height: 1.1111111111rem;
 }
 
+.locations {
+  position: relative;
+}
+
 .locations__map {
   min-height: 100%;
   position: relative;
@@ -1059,14 +1138,10 @@ footer {
 .locations__map-img {
   position: absolute;
   height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   object-fit: cover;
-}
-
-.locations-container {
-  position: relative;
-  min-height: 100%;
 }
 
 .burger {
