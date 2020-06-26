@@ -1,7 +1,11 @@
 .advantages {
     display: flex;
-    max-width: 72.5%;
+    // max-width: 72.5%;
     align-self: center;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .advantages__item {
@@ -9,10 +13,15 @@
     padding: 0 3%;
     position: relative;
 
+
+    @include phones {
+        padding: 0;
+    }
+
     &:before {
         content: url(../img/decor/dots.png);
         position: absolute;
-        top: 30px;
+        top: rem(55px);
         right: 0;
         transform: translateX(50%);
     }
@@ -27,6 +36,12 @@
 
     &:first-of-type {
         padding-left: 0;
+    }
+
+    @include tablets {
+        &:before {
+            display: none;
+        }
     }
 }
 

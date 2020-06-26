@@ -1,5 +1,9 @@
 .reviews__content {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        margin-bottom: rem(30px);   
+    }
 }
 
 .reviews__all {

@@ -1,34 +1,68 @@
 .advantage{
     text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-bottom: rem(45px);
+    }
+
+    @include small-phones {
+        margin-bottom: rem(20px);
+    }
 }
 
 .advantage__pic {
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     border-radius: 50%;
     overflow: hidden;
     background-color: #f2f5f4;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+    flex-shrink: 0;
+
+    @include phones {
+        margin-right: rem(15px);
+        margin-bottom: 0;
+        width: 125px;
+        height: 125px;
+    }
+    
+
+    @include small-phones {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .advantage__img {
     width: 75px;
-    height: 69px;
+    height: 74px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: #2e2e2d;
 }
 
 .advantage__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
     color: #000000;
-    margin-bottom: 16px;
+    margin-bottom: rem(16px);
+
+    @include tablets {
+        margin-bottom: rem(6px);
+    }
 }
 
 .advantage__text {
     line-height: 1.2;
+
+    @include phones {
+        padding-right: 13%;
+    }
 } 

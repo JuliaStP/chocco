@@ -2,7 +2,15 @@
     cursor: pointer;
     display: flex;
     user-select: none;
-    margin-right: 24px;
+    margin-right: rem(24px);
+
+    @include tablets {
+        margin-right: rem(33px);   
+    }
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
 
     &:last-of-type {
         margin-right: 0;
@@ -13,7 +21,8 @@
             border-radius: 0;
 
             &:before {
-                background: url(../img/icons/check.png) center center no-repeat;
+                content: '';
+                background: url(../img/icons/checkmark.svg) center center no-repeat;
             }
         }
     }
@@ -30,19 +39,21 @@
 }
 
 .radio__btn {
-    width: 26px;    
-    height: 26px;
+    width: rem(28px);    
+    height: rem(28px); 
     background-color: #ffffff;
     border-radius: 50%;
     position: relative;
-    margin-right: 7px;
+    margin-right: rem(7px);
+
+    
 
     &:before {
         content: '';
         position: absolute;
         display: none;
-        width: 14px;
-        height: 14px;
+        width: rem(14px); 
+        height: rem(14px); 
         border-radius: 50%;
         background-color: $darkGreen;
         top: 50%;
@@ -52,6 +63,6 @@
 }
 
 .radio__title {
-    font-size: 18px;
+    font-size: rem(18px);
     color: $darkGreen;
 }

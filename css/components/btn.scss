@@ -1,8 +1,8 @@
 .btn {
     display: inline-flex;
-    font-size: 19px;
-    border-radius: 100px;
-    padding: 19px 37px;;
+    font-size: rem(19px);
+    border-radius: rem(100px);
+    padding: rem(19px) rem(37px);
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -32,12 +32,18 @@
     &--color--clear {
         background-color: transparent;
         color: #000000;
-        font-size: 18px;
+        font-size: rem(18px);
         text-transform: none;
-        padding: 0 22px;
+        padding: 0 rem(22px);
+
+        @include tablets{
+            color: $darkGreen;
+        }
 
         &:hover {
             background-color: transparent;
+            color: $darkGreen;
+            opacity: 0.9;
         }
     }
 }

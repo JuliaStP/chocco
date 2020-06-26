@@ -1,13 +1,25 @@
 .contacts {
     text-decoration: none;
+
+    .phone__img {
+        fill: $darkGreen;
+    }
+
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: rem(10px);
+        padding-top: rem(20px);
+    }
 }
 
 .contacts__add {
-    font-size: 21px;
+    font-size: rem(21px);
     color: #000000;
 }
 
 .contacts__phone {
-    font-size: 21px;
+    font-size: rem(21px);
     color: $darkGreen;
 }
