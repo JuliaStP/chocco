@@ -5,18 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/main.css">
+    
     <title>Chocco Bars</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="maincontent">
+        
+        <div class="hamburger hidden">
+            <a href="#" class="hamburger__btn">
+                
+            </a>
+            <ul class="hamburger__menu">
+                <li class="hamburger__item">
+                    <a href="#" class="hamburger__link">О нас</a> 
+                </li>
+                <li class="hamburger__item">
+                    <a href="#" class="hamburger__link">Батончики</a>
+                </li>
+                <li class="hamburger__item">
+                    <a href="#" class="hamburger__link">Команда</a>
+                </li>
+                <li class="hamburger__item">
+                    <a href="#" class="hamburger__link">Меню</a>
+                </li>
+                <li class="hamburger__item">
+                    <a href="#" class="hamburger__link">Отзывы</a>
+                </li>
+                <li class="hamburger__item">
+                    <a href="#" class="hamburger__link">Как мы работаем</a>
+                </li>
+                <li class="hamburger__item">
+                    <a href="#" class="hamburger__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    
 
+        <div class="maincontent">
             <section class="welcome">
                 <div class="container welcome__container">
                     <header class="header">
                         <img src="./img/logo.png" alt="логотип чоко" class="logo">
-                        <nav class="header__menu menu">
+                        <nav class="header__menu menu ">
                             <ul class="menu__list">
                                 <li class="menu__item">
                                     <a href="#" class="menu__link">О нас</a>
@@ -49,12 +80,13 @@
                                 </svg>
                             </span>
                             8 800 903 90 90</a>
-                        <a href="#" class="burger">
+                        <a href="#" class="burger" id="burger">
                             <span class="burger__line"></span>
                             <span class="burger__line"></span>
                             <span class="burger__line"></span>
                         </a>
 
+                        
                     </header>
                     <div class="welcome__main">
                         <div class="welcome__content">
@@ -159,6 +191,141 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+
+            <section class="section section-goods">
+                <div class="container goods-container">
+                    <div class="arrow arrow--left">
+                        <a href="#" class="arrow__link">
+                            <svg class="arrow__img">
+                                <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="goods">
+                        
+                        <div class="goods__img-container">
+                            <div class="arrow arrow--left arrow--tablet">
+                                <a href="#" class="arrow__link">
+                                    <svg class="arrow__img">
+                                        <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <img src="./img/decor/goods-bars.png" alt="батончик" class="goods__img">
+                            <div class="arrow arrow--tablet">
+                                <a href="#" class="arrow__link">
+                                    <svg class="arrow__img">
+                                        <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="goods__content-container">
+                            <div class="goods__nutrients">
+                                <div class="goods__ingredients-container">
+                                    <svg class="goods__ingredients-img">
+                                        <use xlink:href="./img/icons/sprite.svg#chocolate-bar"></use>
+                                    </svg>
+                                    <span class="goods__ingredients-tittle">Состав</span>
+                                </div>
+                                <ul class="goods__ingredients">
+                                    <li class="goods__ingredients-item">
+                                        <svg class="goods__ingredients-pic">
+                                            <use xlink:href="./img/icons/sprite.svg#grape"></use>
+                                        </svg>
+                                        <div class="goods__ingredients-info">
+                                        <span class="goods__ingredients-name">Виноград</span>
+                                        <span class="goods__ingredients-gr">25 г</span>
+                                    </div>
+                                    </li>
+                                    <li class="goods__ingredients-item">
+                                        <svg class="goods__ingredients-pic">
+                                            <use xlink:href="./img/icons/sprite.svg#nut"></use>
+                                        </svg>
+                                        <div class="goods__ingredients-info">
+                                        <span class="goods__ingredients-name">Грецкий орех</span>
+                                        <span class="goods__ingredients-gr">32 г</span>
+                                    </div>
+                                    </li>
+                                    <li class="goods__ingredients-item">
+                                        <svg class="goods__ingredients-pic">
+                                            <use xlink:href="./img/icons/sprite.svg#almond"></use>
+                                        </svg>
+                                        <div class="goods__ingredients-info">
+                                        <span class="goods__ingredients-name">Кунжутное семя</span>
+                                        <span class="goods__ingredients-gr">20 г</span>
+                                    </div>
+                                    </li>
+                                    <li class="goods__ingredients-item">
+                                        <svg class="goods__ingredients-pic">
+                                            <use xlink:href="./img/icons/sprite.svg#powder"></use>
+                                        </svg>
+                                        <div class="goods__ingredients-info">
+                                        <span class="goods__ingredients-name">Сухое молоко</span>
+                                        <span class="goods__ingredients-gr">10 г</span>
+                                    </div>
+                                    </li>
+                                    <li class="goods__ingredients-item">
+                                        <svg class="goods__ingredients-pic">
+                                            <use xlink:href="./img/icons/sprite.svg#honey"></use>
+                                        </svg>
+                                        <div class="goods__ingredients-info">
+                                        <span class="goods__ingredients-name">Зам. сахара</span>
+                                        <span class="goods__ingredients-gr">4 г</span>
+                                    </div>
+                                    </li>
+                                    <li class="goods__ingredients-item">
+                                        <svg class="goods__ingredients-pic">
+                                            <use xlink:href="./img/icons/sprite.svg#beans"></use>
+                                        </svg>
+                                        <div class="goods__ingredients-info">
+                                        <span class="goods__ingredients-name">Какао бобы</span>
+                                        <span class="goods__ingredients-gr">4 г</span>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>  
+                            <h2 class="goods__tittle">Батончик “Гранола виноград”</h2>
+                            <div class="goods__info">
+                                <div class="goods__row">
+                                    <div class="goods__text">
+                                        <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                    </div>
+                                </div>
+                                <div class="goods__row goods__row--small">
+                                    <div class="goods__col">
+                                        <div class="goods__cell">Калорийность</div>  
+                                        <div class="goods__cell--bold">110 ккал</div>
+                                    </div>
+                                    <div class="goods__col">
+                                        <div class="goods__cell">Вес</div>  
+                                        <div class="goods__cell--bold">95 грамм</div> 
+                                    </div>
+                                </div>
+                                <div class="goods__row">
+                                    <div class="goods__col--large">
+                                        <span class="goods__price">140 </span>   
+                                        <svg class="goods__col-img">
+                                            <use xlink:href="./img/icons/sprite.svg#rub"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="goods__col">
+                                        <a href= "#" class="btn btn--color--darkgreen">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <a href="#" class="arrow__link">
+                            <svg class="arrow__img">
+                                <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -289,7 +456,6 @@
                 </div>
             </section>
 
-
             <section class="section locations">
                 <div class="locations__map">
                     <img src="./img/decor/map.png" alt="карта" class="locations__map-img">
@@ -357,6 +523,9 @@
             <li class="dots-menu__item"><a href="#" class="dots-menu__link"></a></li>
         </ul>
     </aside>
+
+    <script src="./main.js"></script>
+
 </body>
 
 </html>

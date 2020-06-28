@@ -1,0 +1,44 @@
+.arrow {
+    width: rem(24px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &--left .arrow__img{
+        transform: rotate(-180deg);
+    }
+
+    &--tablet {
+        display: none;
+    }
+
+    @include tablets {
+        display: none;
+
+        &--tablet {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            .arrow__img {
+                width: rem(20px);
+                height: 3rem;
+            }
+        }
+    } 
+}
+
+.arrow__link {
+    height: rem(28px);
+    margin-top: rem(50px);
+
+    @include tablets {
+        margin-top: 0;
+    }
+}
+
+.arrow__img {
+    fill: #151515;
+    width: 100%;
+    height: 100%;
+}

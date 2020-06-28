@@ -46,4 +46,13 @@
             opacity: 0.9;
         }
     }
+
+    &--color--darkgreen {
+        background-color: $darkGreen;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #2e4e3f;
+        }
+    }
 }
