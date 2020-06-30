@@ -1242,11 +1242,6 @@ footer {
     width: 80%;
   }
 }
-@media screen and (max-width: 375px) {
-  .goods__img-container {
-    height: 11.1111111111rem;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .goods__img {
@@ -1267,9 +1262,11 @@ footer {
 }
 
 .goods__nutrients {
+  width: 5rem;
+  position: relative;
   height: 5rem;
   margin-bottom: 1.6666666667rem;
-  display: flex;
+  display: inline-block;
 }
 @media screen and (max-width: 768px) {
   .goods__nutrients {
@@ -1279,8 +1276,8 @@ footer {
 
 .goods__ingredients-container {
   border-radius: 0.3333333333rem;
+  height: 100%;
   background-color: #86c3d7;
-  width: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1292,12 +1289,13 @@ footer {
   border-radius: 0.3333333333rem;
 }
 .goods__ingredients-container:hover ~ .goods__ingredients {
-  display: block;
+  left: 100%;
 }
 
 .goods__ingredients-item {
-  display: flex;
+  left: 0;
   margin-bottom: 0.4444444444rem;
+  display: flex;
 }
 .goods__ingredients-item:last-of-type {
   margin-bottom: 0;
@@ -1327,7 +1325,8 @@ footer {
 }
 
 .goods__ingredients {
-  display: none;
+  position: absolute;
+  left: -9999px;
   background-color: #ffffff;
   opacity: 0.9;
   width: 14.2222222222rem;
@@ -1337,6 +1336,7 @@ footer {
   font-weight: 500;
   color: #333537;
   border-radius: 0.3333333333rem;
+  top: 0;
 }
 
 .goods__ingredients-info {
@@ -1367,7 +1367,7 @@ footer {
 }
 @media screen and (max-width: 375px) {
   .goods__tittle {
-    padding: 0;
+    padding: 0 10%;
   }
 }
 
@@ -1415,7 +1415,7 @@ footer {
 }
 @media screen and (max-width: 375px) {
   .goods__row {
-    padding: 0;
+    padding: 0 10%;
   }
 }
 
@@ -1465,29 +1465,37 @@ footer {
 }
 
 .arrow {
+  position: absolute;
   width: 1.3333333333rem;
   height: 100%;
   display: flex;
   align-items: center;
 }
+.arrow--right {
+  right: -1.6666666667rem;
+}
+.arrow--left {
+  left: -1.6666666667rem;
+}
 .arrow--left .arrow__img {
   transform: rotate(-180deg);
 }
-.arrow--tablet {
-  display: none;
-}
 @media screen and (max-width: 768px) {
-  .arrow {
-    display: none;
+  .arrow--right {
+    right: 15%;
+    bottom: 22%;
   }
-  .arrow--tablet {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  .arrow--left {
+    left: 15%;
+    bottom: 22%;
   }
-  .arrow--tablet .arrow__img {
-    width: 1.1111111111rem;
-    height: 3rem;
+}
+@media screen and (max-width: 480px) {
+  .arrow--right {
+    right: 1%;
+  }
+  .arrow--left {
+    left: 1%;
   }
 }
 

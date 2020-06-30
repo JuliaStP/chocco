@@ -152,7 +152,7 @@
 	c0.8-0.8,0.8-2,0-2.7L12.2,9z"/>
 	</symbol>
 
-	<symbol id="arrow" width="16" height="28" viewBox="0 0 14.2 25.5">
+	<symbol id="arrow" viewBox="0 0 14.2 25.5">
 		<polygon class="st0" points="14.2,12.7 1.5,0 0,1.5 11.3,12.7 0,24 1.5,25.5 14.2,12.7 14.2,12.7 "/>
 	</symbol>
 

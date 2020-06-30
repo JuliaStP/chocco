@@ -1,32 +1,50 @@
 .arrow {
+    position: absolute;
     width: rem(24px);
     height: 100%;
     display: flex;
     align-items: center;
 
-    &--left .arrow__img{
+    &--right {
+        right: rem(-30px);
+    }
+
+    &--left {
+        left: rem(-30px);
+        
+    .arrow__img {
         transform: rotate(-180deg);
-    }
-
-    &--tablet {
-        display: none;
-    }
-
-    @include tablets {
-        display: none;
-
-        &--tablet {
-            display: flex;
-            align-items: center;
-            height: 100%;
-
-            .arrow__img {
-                width: rem(20px);
-                height: 3rem;
-            }
         }
-    } 
-}
+    }
+
+    
+    @include tablets {
+
+        &--right {
+            right: 15%;
+            bottom: 22%;
+        }
+
+        &--left {
+            left: 15%;
+            bottom: 22%;
+        }
+
+    }
+
+    @include phones {
+
+        &--right {
+                right: 1%;
+        }
+    
+        &--left {
+                left: 1%;
+        }
+    
+    }
+} 
+
 
 .arrow__link {
     height: rem(28px);

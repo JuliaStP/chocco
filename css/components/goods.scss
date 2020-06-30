@@ -19,10 +19,6 @@
     @include phones {
         width: 80%;
     }
-
-    @include small-phones {
-        height: rem(200px);
-    }
 }
 
 .goods__img {
@@ -44,11 +40,11 @@
 }
 
 .goods__nutrients {
-    height: rem(90px);
-    
-    
+    width: 5rem;
+    position: relative;
+    height: 5rem;
     margin-bottom: rem(30px);
-    display: flex;
+    display: inline-block;
 
     @include tablets {
         display: none;
@@ -58,8 +54,8 @@
 
 .goods__ingredients-container {
     border-radius: rem(6px);
+    height: 100%;
     background-color: $blue;
-    width: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,13 +68,14 @@
     }
 
     &:hover ~ .goods__ingredients {
-        display: block;
+        left: 100%;
     }
 }
 
 .goods__ingredients-item {
-    display: flex;
+    left: 0;
     margin-bottom: rem(8px);
+    display: flex;
 
     &:last-of-type {
         margin-bottom: 0;
@@ -109,7 +106,8 @@
 }
 
 .goods__ingredients {
-    display: none;
+    position: absolute;
+    left: -9999px;
     background-color: #ffffff;
     opacity: 0.9;
     width: rem(256px);
@@ -119,6 +117,7 @@
     font-weight: 500;
     color: #333537;
     border-radius: rem(6px);
+    top: 0;
 }
 
 .goods__ingredients-info {
@@ -146,7 +145,7 @@
     }
 
     @include small-phones {
-        padding: 0;
+        padding: 0 10%;
     }
 }
 
@@ -190,7 +189,7 @@
     }
 
     @include small-phones {
-        padding: 0;
+        padding: 0 10%;
     }
 }
 
