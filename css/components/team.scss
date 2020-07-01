@@ -1,0 +1,118 @@
+.team-container {
+   min-height: rem(450px); 
+
+   @include tablets {
+    min-height: rem(600px); 
+   }
+}
+
+.team {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__item {
+    text-align: center;
+
+    &--is-active{
+        
+        .team__tittle {
+            color: #d4b37d;
+        }
+        .team__link:after {
+            transform: rotate(180deg);
+        }
+    }
+
+    margin-right: rem(20px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.team__pic-container {
+    margin-bottom: rem(20px);
+    width: rem(220px);
+}
+
+.team__pic {
+    width: 100%;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.team__pic-inner {
+    display: none;
+
+    @include tablets {
+        display: block;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    @include phones {
+        width: rem(142px);
+    }
+}
+
+.team__link {
+    font-size: rem(21px);
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+
+    &:after {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border: 5px solid transparent;
+        border-top-color: #365a49;
+        border-bottom-width: 0;
+        position: absolute;
+        bottom: rem(6px);
+        margin-left: 3px;
+    }
+
+    @include tablets {
+        
+    }
+}
+
+.team__info {
+    margin-top: rem(5px);
+    overflow: hidden;
+    transition: height 0.4s;
+    height: 0;
+
+    @include tablets {
+        padding: 0 34%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include phones {
+        padding: 0 21%;
+    }
+}
+
+.team__tittle {
+    font-size: rem(18px);
+    font-weight: 400;
+    color: #000000;
+}
+
+.team__text {
+    letter-spacing: -0.3px;
+}

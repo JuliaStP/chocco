@@ -1514,3 +1514,153 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+.section-team {
+  position: relative;
+  background: url(../img/decor/branch-right.png) right bottom 200% no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .section-team {
+    background-position: right bottom 155%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-team {
+    background-position: right bottom 320%;
+  }
+}
+.section-team:after {
+  content: url("../img/decor/team-blueberries.png");
+  position: absolute;
+  right: 0;
+  bottom: 89%;
+}
+@media screen and (max-width: 768px) {
+  .section-team:after {
+    bottom: 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-team:after {
+    display: none;
+  }
+}
+
+.section-team-tittle {
+  margin-bottom: 2.5rem;
+}
+
+.team-container {
+  min-height: 25rem;
+}
+@media screen and (max-width: 768px) {
+  .team-container {
+    min-height: 33.3333333333rem;
+  }
+}
+
+.team {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__item {
+  text-align: center;
+  margin-right: 1.1111111111rem;
+}
+.team__item--is-active .team__tittle {
+  color: #d4b37d;
+}
+.team__item--is-active .team__link:after {
+  transform: rotate(180deg);
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-right: 0;
+  }
+}
+
+.team__pic-container {
+  margin-bottom: 1.1111111111rem;
+  width: 12.2222222222rem;
+}
+
+.team__pic {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team__pic {
+    display: none;
+  }
+}
+
+.team__pic-inner {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__pic-inner {
+    display: block;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__pic-inner {
+    width: 7.8888888889rem;
+  }
+}
+
+.team__link {
+  font-size: 1.1666666667rem;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+}
+.team__link:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top-color: #365a49;
+  border-bottom-width: 0;
+  position: absolute;
+  bottom: 0.3333333333rem;
+  margin-left: 3px;
+}
+.team__info {
+  margin-top: 0.2777777778rem;
+  overflow: hidden;
+  transition: height 0.4s;
+  height: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__info {
+    padding: 0 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__info {
+    padding: 0 21%;
+  }
+}
+
+.team__tittle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.team__text {
+  letter-spacing: -0.3px;
+}
