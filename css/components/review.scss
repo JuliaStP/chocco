@@ -4,6 +4,7 @@
     padding: rem(50px) rem(45px) rem(34px);
     overflow: hidden;
     position: relative;
+    min-height: rem(280px);
 
     @include tablets {
         padding: rem(60px) rem(18px) rem(30px);
@@ -26,6 +27,14 @@
 .review__container {
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    // transition: .3s;
+    opacity: 0;
 
     @include tablets {
         
@@ -33,6 +42,13 @@
         text-align: center;
         align-items: center;
     }
+
+}
+
+.review__container.active {
+        position: static;
+        opacity: 1;
+        pointer-events: unset;
 }
 
 .review__avatar {
@@ -55,7 +71,7 @@
 .review__content {
     margin-left: rem(20px);
     flex: 1;
-    max-width: 51%;
+    max-width: 55%;
     padding-top: rem(8px);
 
     @include tablets {
