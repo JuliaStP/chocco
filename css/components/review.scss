@@ -84,6 +84,15 @@
     font-size: rem(30px);
     font-weight: 700;
     margin-bottom: rem(17px);
+
+    @include phones {
+        padding: 0 12%;
+    }
+
+    @include small-phones {
+        padding: 0;
+        line-height: 1;
+    }
 }
 
 .review__text {
@@ -92,6 +101,14 @@
 
     @include tablets {
         min-height: rem(80px);   
+    }
+
+    @include phones {
+        padding: 0px 4%;
+    }
+
+    @include small-phones {
+        padding: 0;
     }
 }
 

@@ -614,6 +614,11 @@ footer {
     margin-bottom: 1.6666666667rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    margin-bottom: 0.8333333333rem;
+  }
+}
 
 .reviews__all {
   display: flex;
@@ -707,6 +712,17 @@ footer {
   font-weight: 700;
   margin-bottom: 0.9444444444rem;
 }
+@media screen and (max-width: 480px) {
+  .review__title {
+    padding: 0 12%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .review__title {
+    padding: 0;
+    line-height: 1;
+  }
+}
 
 .review__text {
   margin-bottom: 1.4444444444rem;
@@ -715,6 +731,16 @@ footer {
 @media screen and (max-width: 768px) {
   .review__text {
     min-height: 4.4444444444rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .review__text {
+    padding: 0px 4%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .review__text {
+    padding: 0;
   }
 }
 
@@ -778,7 +804,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .section-reviews:before {
-    top: 4.1111111111rem;
+    top: -0.5555555556rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1264,6 +1290,11 @@ footer {
     width: 80%;
   }
 }
+@media screen and (max-width: 375px) {
+  .goods__img-container {
+    height: 17.2222222222rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .goods__img {
@@ -1563,11 +1594,6 @@ footer {
   right: 0;
   bottom: 89%;
 }
-@media screen and (max-width: 768px) {
-  .section-team:after {
-    bottom: 95%;
-  }
-}
 @media screen and (max-width: 375px) {
   .section-team:after {
     display: none;
@@ -1577,6 +1603,16 @@ footer {
 .section-team-tittle {
   margin-bottom: 2.5rem;
 }
+@media screen and (max-width: 768px) {
+  .section-team-tittle {
+    margin-bottom: 1.3888888889rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-team-tittle {
+    margin-bottom: 1rem;
+  }
+}
 
 .team-container {
   min-height: 25rem;
@@ -1584,6 +1620,16 @@ footer {
 @media screen and (max-width: 768px) {
   .team-container {
     min-height: 33.3333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-container {
+    min-height: 25rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .team-container {
+    min-height: 20rem;
   }
 }
 
@@ -1620,6 +1666,16 @@ footer {
   margin-bottom: 1.1111111111rem;
   width: 12.2222222222rem;
 }
+@media screen and (max-width: 768px) {
+  .team__pic-container {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__pic-container {
+    margin-bottom: 0;
+  }
+}
 
 .team__pic {
   width: 100%;
@@ -1638,11 +1694,13 @@ footer {
     display: block;
     align-items: center;
     margin-right: 0;
+    margin-bottom: 1.9444444444rem;
   }
 }
 @media screen and (max-width: 480px) {
   .team__pic-inner {
-    width: 7.8888888889rem;
+    width: 8.2222222222rem;
+    margin-bottom: 0.8333333333rem;
   }
 }
 
@@ -1679,7 +1737,8 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .team__info {
-    padding: 0 21%;
+    padding: 0 22%;
+    margin-top: 0.3888888889rem;
   }
 }
 

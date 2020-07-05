@@ -15,10 +15,6 @@
         position: absolute;
         right: 0;
         bottom: 89%;
-
-        @include tablets {
-            bottom: 95%;
-         }
     
         @include small-phones {
             display: none;
@@ -29,4 +25,12 @@
 
 .section-team-tittle {
     margin-bottom: rem(45px);
+
+    @include tablets {
+        margin-bottom: rem(25px);
+    }
+
+    @include phones {
+        margin-bottom: rem(18px);
+    }
 }

@@ -13,7 +13,7 @@
         }
 
         @include phones {
-            top:rem(74px);
+            top:rem(-10px);
         }
 
         @include small-phones {

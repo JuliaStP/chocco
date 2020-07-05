@@ -4,6 +4,14 @@
    @include tablets {
     min-height: rem(600px); 
    }
+
+   @include phones {
+    min-height: rem(450px); 
+   }
+
+   @include small-phones {
+    min-height: rem(360px); 
+   }
 }
 
 .team {
@@ -42,6 +50,14 @@
 .team__pic-container {
     margin-bottom: rem(20px);
     width: rem(220px);
+
+    @include tablets {
+        margin-bottom: 6px;
+    }
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .team__pic {
@@ -59,10 +75,12 @@
         display: block;
         align-items: center;
         margin-right: 0;
+        margin-bottom: rem(35px);
     }
 
     @include phones {
-        width: rem(142px);
+        width: rem(148px);
+        margin-bottom: rem(15px);
     }
 }
 
@@ -103,7 +121,8 @@
     }
 
     @include phones {
-        padding: 0 21%;
+        padding: 0 22%;
+        margin-top: rem(7px);
     }
 }
 
