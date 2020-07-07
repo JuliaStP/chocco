@@ -1,0 +1,36 @@
+.section-team {
+    position: relative;
+    background: url(../img/decor/branch-right.png) right bottom 200% no-repeat;
+
+    @include tablets {
+        background-position: right bottom 155%;
+     }
+
+    @include small-phones {
+       background-position: right bottom 320%;
+    }
+
+    &:after {
+        content: url('../img/decor/team-blueberries.png');
+        position: absolute;
+        right: 0;
+        bottom: 89%;
+    
+        @include small-phones {
+            display: none;
+        }
+    }
+}
+
+
+.section-team-tittle {
+    margin-bottom: rem(45px);
+
+    @include tablets {
+        margin-bottom: rem(25px);
+    }
+
+    @include phones {
+        margin-bottom: rem(18px);
+    }
+}

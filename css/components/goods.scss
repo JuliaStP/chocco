@@ -19,6 +19,10 @@
     @include phones {
         width: 80%;
     }
+
+    @include small-phones {
+        height: rem(310px);
+    }
 }
 
 .goods__img {
