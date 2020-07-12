@@ -1,0 +1,28 @@
+.section-reviews {
+    background: url(../img/decor/leaf-reviews.png) left bottom -40% no-repeat;
+    position: relative;
+
+    @include phones {
+        background-position: left bottom -57%;
+    }
+
+    &:before {
+        content: url(../img/decor/strawberry.png);
+        position: absolute;
+        top: rem(82px);
+        right: 0;
+        z-index: 129;
+
+        @include tablets {
+            top: rem(10px);
+        }
+
+        @include phones {
+            top:0;
+        }
+
+        @include small-phones {
+            display: none;
+        }
+    }
+}
