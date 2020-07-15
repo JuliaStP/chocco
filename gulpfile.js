@@ -14,14 +14,14 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
-const px2rem = require('gulp-smile-px2rem');
+// const px2rem = require('gulp-smile-px2rem');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
-const svgSprite = require('gulp-svg-sprite');
+// const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
 
 const env = process.env.NODE_ENV;
@@ -36,23 +36,29 @@ task('clean', function () {
     }).pipe(rm());
 });
 
-// const files = [
-//     'src/styles/one.scss',
-//     'src/styles/two.scss',
-// ]
-
 task('copy:html', () => {
     return src(`${SRC_PATH}/*.html`)
     .pipe(dest(DIST_PATH))
     .pipe(reload({stream: true}));
-    // return src(files).pipe(dest('dist'));
 });
 
+task('copy:images', () => {
+  return src(`${SRC_PATH}/img/**`)
+  .pipe(dest(`${DIST_PATH}/img/`))
+  .pipe(reload({stream: true}));
+});
 
-// const styles = [
-//     'node_modules/normalize.css/normalize.css',
-//     'src/styles/main.scss'
-// ]
+task('copy:fonts', () => {
+  return src(`${SRC_PATH}/fonts/*`)
+  .pipe(dest(`${DIST_PATH}/fonts/`))
+  .pipe(reload({stream: true}));
+});
+
+task('copy:favicon', () => {
+  return src(`${SRC_PATH}/favicon/*`)
+  .pipe(dest(`${DIST_PATH}/favicon/`))
+  .pipe(reload({stream: true}));
+});
 
 task('styles', () => {
     return src([...STYLE_LIBS, 'src/styles/main.scss'])
@@ -60,7 +66,7 @@ task('styles', () => {
     .pipe(concat('main.min.scss'))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
-    .pipe(px2rem())
+    // .pipe(px2rem())
     .pipe(gulpif(env === 'prod', autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
@@ -71,12 +77,6 @@ task('styles', () => {
     .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
 });
-
-
-// const libs = [
-//     'node_modules/jquery/dist/jquery.js',
-//     'src/scripts/*.js'
-//    ];
 
 task('scripts', () => {
   return src([...JS_LIBS, 'src/scripts/*.js'])
@@ -103,14 +103,14 @@ task('icons', () => {
           }
         ]
       }))
-      .pipe(svgSprite({
-        mode: {
-          symbol: {
-            sprite: '../sprite.svg'
-          }
-        }
-      }))
-      .pipe(dest(`${DIST_PATH}/images/icons`));
+      // .pipe(svgSprite({
+      //   mode: {
+      //     symbol: {
+      //       sprite: '../sprite.svg'
+      //     }
+      //   }
+      // }))
+      .pipe(dest(`${DIST_PATH}/img/icons`));
 });
 
 task('server', function() {
@@ -130,7 +130,7 @@ task('watch', () => {
   watch('./src/img/icons/*.svg', series('icons'));
 });
 
-task('default', series('clean', parallel('copy:html', 'styles', 'scripts', 'icons'), parallel('watch', 'server')));
+task('default', series('clean', parallel('copy:html', 'copy:images', 'copy:fonts', 'copy:favicon', 'styles', 'scripts', 'icons'), parallel('watch', 'server')));
 
 task('build',
  series(

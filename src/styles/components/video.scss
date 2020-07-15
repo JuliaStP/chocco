@@ -20,7 +20,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(../img/decor/video-pic.png);
+    background: url(./img/decor/video-pic.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,6 +51,13 @@
     }
 }
 
+#play-pause {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .video__play {
     width: 16px;
     height: 22px;
@@ -73,7 +80,6 @@
     
 }
 
-///////////////////////////////
 .video-controls.hide {
     opacity: 0;
     pointer-events: none;
@@ -136,22 +142,6 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
   }
-///////////////////////////////////////////////////
-// #progress-bar {
-//     width: 70%;
-//     height: 4px;
-// }
-
-// .seek-tooltip {
-//     display: none;
-
-// }
-
-// .seek {
-//     color: transparent;
-//     width: 70%;
-//     height: 4px;
-// }
 
 .video__playback {
     width: 70%;
@@ -175,8 +165,6 @@
 }
 
 .pause {
-    width: 16px;
-    height: 22px;
     position: relative;
     padding: 1px 6px;
 
@@ -186,25 +174,47 @@
             display: block;
             position: absolute;
             width: 5px;
-            top: 0;
-            bottom: 0;
+            top: 4px;
+            bottom: 4px;
             background-color: #626262;
+
+            @include phones {
+                top: 8px;
+                bottom: 8px;
+            }
+
+            @include small-phones {
+                width: 4px;
+                top: 10px;
+                bottom: 10px;
+            }
         }
 
         &:after {
-            right:0;
+            right:6px;
+
+            @include phones {
+                right:8px;
+            }
+
+            @include small-phones {
+                right: 9px;
+            }
         }
 
         &:before {
-            left: 0;
-        }
+            left: 6px;
 
-        @include phones {
-            width: 10px;
-            height: 13px;
-            padding: 1px 7px;
+            @include phones {
+                left: 8px;
+            }
+
+            @include small-phones {
+                left: 9px;
+            }
         }
 }
+
 
 
 .pause {

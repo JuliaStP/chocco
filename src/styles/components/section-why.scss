@@ -1,6 +1,6 @@
 .section-why {
     position: relative;
-    background: url(../img/decor/leaf-why.png) left top 57% no-repeat;
+    background: url(./img/decor/leaf-why.png) left top 57% no-repeat;
 
     @include tablets {
         background-position: left top;
@@ -12,7 +12,7 @@
 
     &:before {
         position: absolute;
-        content: url(../img/decor/bars-raspberry.png);
+        content: url(./img/decor/bars-raspberry.png);
         left: 0;
         bottom: rem(-93px);
 

@@ -1,5 +1,5 @@
 .section-reviews {
-    background: url(../img/decor/leaf-reviews.png) left bottom -40% no-repeat;
+    background: url(./img/decor/leaf-reviews.png) left bottom -40% no-repeat;
     position: relative;
 
     @include phones {
@@ -7,7 +7,7 @@
     }
 
     &:before {
-        content: url(../img/decor/strawberry.png);
+        content: url(./img/decor/strawberry.png);
         position: absolute;
         top: rem(82px);
         right: 0;

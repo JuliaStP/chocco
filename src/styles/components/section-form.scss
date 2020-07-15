@@ -1,9 +1,10 @@
 .section-form {
-    background: url(../img/decor/form-bg.png) center center;
+    background: url(./img/decor/form-bg.png) center center;
     position: relative;
+    background-size: contain;
 
     &:before {
-        content: url(../img/decor/form-blueberry.png);
+        content: url(./img/decor/form-blueberry.png);
         position: absolute;
         bottom: 3.5rem;
         left: 0;
@@ -18,7 +19,7 @@
     }
 
     &:after {
-        content: url(../img/decor/form-leaf.png);
+        content: url(./img/decor/form-leaf.png);
         position: absolute;
         bottom: 3.5rem;
         right: 0; 

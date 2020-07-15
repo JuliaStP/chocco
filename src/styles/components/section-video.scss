@@ -4,7 +4,7 @@
 
     &:before{
         position: absolute;
-        content: url(../img/decor/video-leaves.png);
+        content: url(./img/decor/video-leaves.png);
         top: rem(-60px);
         left: 0;
 
@@ -15,7 +15,7 @@
 
     &:after {
         position: absolute;
-        content: url(../img/decor/video-berry.png);
+        content: url(./img/decor/video-berry.png);
         bottom: rem(-92px);
         right: rem(-48px);
 

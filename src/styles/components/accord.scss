@@ -12,11 +12,19 @@
     color: #ffffff;
 }
 
+li.accord__item.item-active ~ .accord__item .accord__link{
+
+    @include phones {
+        opacity: 0;
+        width: 0;
+        transition: all 0.4s;
+    } 
+}
+
 .accord__link {
     width: rem(100px);
     padding-bottom: rem(42px);
 }
-
 
 .accord__tittle{
     margin-left: rem(15px);
@@ -49,14 +57,26 @@
     min-width: rem(630px);
     padding: rem(50px) rem(226px) rem(50px) rem(27px);
     overflow-y: auto;
-    font-size: 16px;
+    font-size: rem(16px);
     background-color: #333537;
     opacity: 0.93;
     position: relative;
     line-height: 1.5;
+
+    @include small-phones {
+        padding-right: rem(340px);
+    }
 }
 
 .accord__btn {
     top: rem(26px);
     right: rem(155px);
+
+    @include phones {
+        right: rem(210px);
+    }
+
+    @include small-phones {
+        right: rem(325px);
+    }
 }

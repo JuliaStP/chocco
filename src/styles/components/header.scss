@@ -15,8 +15,7 @@
 }
 
 .header__menu {
-    // margin: 0 30px;
-
+    
     @include tablets {
         display: none;
     }

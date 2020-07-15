@@ -20,6 +20,7 @@
   "homepage": "https://github.com/JuliaStP/chocco#readme",
   "dependencies": {
     "jquery": "^3.5.1",
+    "jquery-touchswipe": "^1.6.19",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

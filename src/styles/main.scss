@@ -16,11 +16,11 @@ $z-dots-menu:100;
 @import 'components/media';
 
 //normalize css
-@import url('./normalize.css');
+@import 'normalize';
 
 //setup
 @import 'layout';
-@import url('./fonts.css');
+@import 'fonts';
 
 //components
 @import 'components/welcome';

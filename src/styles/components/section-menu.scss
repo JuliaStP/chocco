@@ -1,5 +1,5 @@
 .section-menu {
-    background: url(../img/menu/bg.png) center center no-repeat;
+    background: url(./img/menu/bg.png) center center no-repeat;
     background-size: cover;
     background-color: #000000;
     display: block;
@@ -7,7 +7,7 @@
 
     &:before {
         position: absolute;
-        content: url(../img/decor/big-raspberry.png);
+        content: url(./img/decor/big-raspberry.png);
         top: rem(-72px);
         left: 0;
 

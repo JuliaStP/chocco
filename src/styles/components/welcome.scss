@@ -1,5 +1,5 @@
 .welcome {
-    background: url(../img/decor/branch.png) right bottom / auto no-repeat;
+    background: url(./img/decor/branch.png) right bottom / auto no-repeat;
     background-color: $blue;  
     height: 100%;
     min-height: rem(650px);
@@ -25,14 +25,14 @@
         position: absolute;
         bottom: rem(-60px);
         left: 0;
-        content: url(../img/decor/leaf-small.png);
+        content: url(./img/decor/leaf-small.png);
     }
 
     &:after {
         position: absolute;
         bottom: rem(-56px);
         right: 0;
-        content: url(../img/decor/berries-leaves.png);
+        content: url(./img/decor/berries-leaves.png);
     }
 }
 
@@ -63,7 +63,7 @@
         max-width: 100%;
 
         &:before {
-            content: url(../img/decor/tablet-bars.png);
+            content: url(./img/decor/tablet-bars.png);
         }
     }
 
@@ -77,7 +77,7 @@
 
         &:before {
         position: absolute;
-        content: url(../img/decor/tablet-bars.png);
+        content: url(./img/decor/tablet-bars.png);
         transform: scale(0.7);
         top: 0px;
         right: rem(102px);
