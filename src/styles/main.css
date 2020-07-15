@@ -2336,6 +2336,11 @@ footer {
   position: relative;
   line-height: 1.5;
 }
+@media screen and (max-width: 480px) {
+  .accord__text {
+    padding-right: 16.1111111111rem;
+  }
+}
 @media screen and (max-width: 375px) {
   .accord__text {
     padding-right: 18.8888888889rem;
@@ -2348,7 +2353,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .accord__btn {
-    right: 11.6666666667rem;
+    right: 15rem;
   }
 }
 @media screen and (max-width: 375px) {

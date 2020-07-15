@@ -63,6 +63,11 @@ li.accord__item.item-active ~ .accord__item .accord__link{
     position: relative;
     line-height: 1.5;
 
+
+    @include phones {
+        padding-right: rem(290px);
+    }
+
     @include small-phones {
         padding-right: rem(340px);
     }
@@ -73,7 +78,7 @@ li.accord__item.item-active ~ .accord__item .accord__link{
     right: rem(155px);
 
     @include phones {
-        right: rem(210px);
+        right: rem(270px);
     }
 
     @include small-phones {
