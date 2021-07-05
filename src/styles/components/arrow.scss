@@ -1,0 +1,62 @@
+.arrow {
+    position: absolute;
+    width: rem(24px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &--right {
+        right: rem(-30px);
+    }
+
+    &--left {
+        left: rem(-30px);
+        
+    .arrow__img {
+        transform: rotate(-180deg);
+        }
+    }
+
+    
+    @include tablets {
+
+        &--right {
+            right: 15%;
+            bottom: 22%;
+        }
+
+        &--left {
+            left: 15%;
+            bottom: 22%;
+        }
+
+    }
+
+    @include phones {
+
+        &--right {
+                right: 1%;
+        }
+    
+        &--left {
+                left: 1%;
+        }
+    
+    }
+} 
+
+
+.arrow__link {
+    height: rem(28px);
+    margin-top: rem(50px);
+
+    @include tablets {
+        margin-top: 0;
+    }
+}
+
+.arrow__img {
+    fill: #151515;
+    width: 100%;
+    height: 100%;
+}

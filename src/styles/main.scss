@@ -1,0 +1,60 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+$small-phones: 375px;
+
+//colors
+$blue: #86c3d7;
+$darkGreen: #365a49;
+
+//z-index
+$z-dots-menu:100;
+
+@import 'components/media';
+
+//normalize css
+@import 'normalize';
+
+//setup
+@import 'layout';
+@import 'fonts';
+
+//components
+@import 'components/welcome';
+@import 'components/header';
+@import 'components/icons';
+@import 'components/icon';
+@import 'components/btn';
+@import 'components/section';
+@import 'components/headline';
+@import 'components/advantages';
+@import 'components/advantage';
+@import 'components/section-why';
+@import 'components/reviews';
+@import 'components/review';
+@import 'components/avatar-menu';
+@import 'components/section-reviews';
+@import 'components/form';
+@import 'components/section-form';
+@import 'components/radio';
+@import 'components/dots-menu';
+@import 'components/footer';
+@import 'components/contacts';
+@import 'components/socials';
+@import 'components/locations';
+@import 'components/burger';
+@import 'components/hamburger';
+@import 'components/section-goods';
+@import 'components/goods';
+@import 'components/goods-container';
+@import 'components/arrow';
+@import 'components/section-team';
+@import 'components/team';
+@import 'components/popup';
+@import 'components/section-menu';
+@import 'components/accord';
+@import 'components/section-video';
+@import 'components/video';

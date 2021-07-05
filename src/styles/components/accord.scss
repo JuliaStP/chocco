@@ -1,0 +1,87 @@
+.accord {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+}
+
+.accord__item{
+    height: 100%;
+    display: flex;
+    color: #ffffff;
+}
+
+li.accord__item.item-active ~ .accord__item .accord__link{
+
+    @include phones {
+        opacity: 0;
+        width: 0;
+        transition: all 0.4s;
+    } 
+}
+
+.accord__link {
+    width: rem(100px);
+    padding-bottom: rem(42px);
+}
+
+.accord__tittle{
+    margin-left: rem(15px);
+    width: 100%;
+    height: 100%;
+    font-size: rem(48px);
+    font-weight: 700;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    background-position: cover;
+}
+
+.accord__content {
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.item-active .accord__content {
+    width: rem(535px);
+    z-index: 150;
+
+    @include tablets {
+        width: rem(515px);
+    }
+}
+ 
+.accord__text {
+    height: 100%;
+    min-width: rem(630px);
+    padding: rem(50px) rem(226px) rem(50px) rem(27px);
+    overflow-y: auto;
+    font-size: rem(16px);
+    background-color: #333537;
+    opacity: 0.93;
+    position: relative;
+    line-height: 1.5;
+
+
+    @include phones {
+        padding-right: rem(290px);
+    }
+
+    @include small-phones {
+        padding-right: rem(340px);
+    }
+}
+
+.accord__btn {
+    top: rem(26px);
+    right: rem(155px);
+
+    @include phones {
+        right: rem(270px);
+    }
+
+    @include small-phones {
+        right: rem(325px);
+    }
+}

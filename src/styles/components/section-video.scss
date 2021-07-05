@@ -1,0 +1,59 @@
+.section-video {
+    background-color: #f8faf9;
+    position: relative;
+
+    &:before{
+        position: absolute;
+        content: url(./img/decor/video-leaves.png);
+        top: rem(-60px);
+        left: 0;
+
+        @include tablets {
+            left: rem(-57px);
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: url(./img/decor/video-berry.png);
+        bottom: rem(-92px);
+        right: rem(-48px);
+
+        @include tablets {
+            bottom: rem(23px);
+            right: rem(-92px);
+        }
+
+        @include phones {
+            bottom: rem(-86px);
+            right: rem(-90px);
+        }
+
+        @include small-phones {
+            display: none;
+        }
+    }
+}
+
+.section-video__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-video__wrapper {
+    height: rem(405px);
+    width: rem(660px);
+    object-fit: cover;
+
+    @include tablets {
+        height: rem(330px);
+        width: rem(595px);
+    }
+
+    @include phones {
+        height: rem(245px);
+        width: rem(400px);
+    }
+}
