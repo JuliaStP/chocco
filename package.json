@@ -1,7 +1,7 @@
 {
   "name": "chocco",
   "version": "1.0.0",
-  "description": "---\r ### Maxim Ivanov\r ---\r ### Beginner Web",
+  "description": "Chocco bars project",
   "main": "main.js",
   "scripts": {
     "gulp": "cross-env NODE_ENV=dev gulp",
@@ -12,22 +12,23 @@
     "url": "git+https://github.com/JuliaStP/chocco.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Julia Andreeva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JuliaStP/chocco/issues"
   },
-  "homepage": "https://github.com/JuliaStP/chocco#readme",
+  "homepage": "https://github.com/JuliaStP/chocco",
   "dependencies": {
-    "jquery": "^3.5.1",
+    "browserslist": "^4.16.6",
+    "jquery": "^3.6.0",
     "jquery-touchswipe": "^1.6.19",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
-    "browser-sync": "^2.26.7",
-    "cross-env": "^7.0.2",
+    "browser-sync": "^2.27.4",
+    "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",

@@ -1,5 +1,3 @@
-## Julia Andreeva
+## Chocco bars web site
 ---
-### Maxim Ivanov
----
-### Beginner Web
+### Developed using HTML, SCSS, JS, jQuerry, gulp

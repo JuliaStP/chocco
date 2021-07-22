@@ -14,10 +14,10 @@ function init() {
         });
     
         myPoints = [
-            { coords: [55.749798, 37.605695], text: 'CHOCCO Первый магазин' },
-            { coords: [55.758729, 37.583145], text: 'CHOCCO Второй магазин' },
-            { coords: [55.742804, 37.580576], text: 'CHOCCO Третий магазин' },
-            { coords: [55.757064, 37.622157], text: 'CHOCCO Четвертый магазин'} 
+            { coords: [55.749798, 37.605695], text: 'CHOCCO First store' },
+            { coords: [55.758729, 37.583145], text: 'CHOCCO Second store' },
+            { coords: [55.742804, 37.580576], text: 'CHOCCO Third store' },
+            { coords: [55.757064, 37.622157], text: 'CHOCCO Forth store'} 
         ];
   
     for (let i = 0, l = myPoints.length; i < l; i++) {
@@ -37,7 +37,7 @@ function init() {
             noPlacemark: true,
             resultsPerPage: 4
         }});
-  }
+    }
   
   function CustomSearchProvider(points) {
     this.points = points;
